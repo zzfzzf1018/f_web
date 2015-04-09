@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+@model Flying.Entity.User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登陆</title>
+    <link href="~/Content/login/login.css" rel="stylesheet" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    <script>
+        var loginHelper = {
+            checkLogin: function () {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="user">
+            <img src="~/Content/login/images/user.png" />
+        </div>
+        <div class="login">
+            <div class="inset">
+                @using (Html.BeginForm("Login", "Manage"))
+                {
+                     @Html.AntiForgeryToken()
+                    <div>
+                        <span>
+                            @Html.LabelFor(x => x.username, "用户名")
+                        </span>
+                        <span>
+                            @Html.TextBoxFor(x => x.username, new { @id = "txtUserName", @class = "textbox" })
+                        </span>
+                        @*@Html.ValidationMessageFor(x => x.username, null, new { @style = "color:red;" })*@
+                    </div>
+                    <div>
+                        <span>
+                            @Html.LabelFor(x => x.pwd, "密码")
+                        </span>
+                        <span>
+                            @Html.PasswordFor(x => x.pwd, new { @id = "txtPwd", @class = "password" })
+                        </span>
+                        @Html.ValidationSummary(null, new { @style = "color:red;" })
+                        @*@Html.ValidationMessageFor(x => x.pwd, null, new { @style="color:red;"})*@
+                    </div>
+                    <div class="sign">
+                        <div class="submit">
+                            <input type="submit" onclick="return loginHelper.checkLogin()" value="登陆">
+                        </div>
+                        <span class="forget-pass">
+                            <a href="#">忘记密码?</a>
+                        </span>
+                        <div class="clear"> </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@if (Request.IsAuthenticated)
+{
+
+    <li>
+        @Html.ActionLink(HttpContext.Current.User.Identity.Name, "Account", "Manage", routeValues: null, htmlAttributes: new { title = "账号管理" })
+    </li>
+    <li>
+        @using (Html.BeginForm("LoginOff", "Manage", FormMethod.Post, new { id = "logoutForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()">注销</a>
+        }
+    </li>
+    <li>
+        @Html.ActionLink("写博文", "Write", "Blog", null, new object { })
+    </li>
+}
+else
+{
+    @*<li>@Html.ActionLink("注册", "Register", "Manage", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+    <li>@Html.ActionLink("登录", "Login", "Manage", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+}

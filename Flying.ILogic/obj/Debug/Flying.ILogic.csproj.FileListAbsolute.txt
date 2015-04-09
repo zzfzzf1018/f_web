@@ -1,0 +1,10 @@
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\Flying.ILogic.dll
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\Flying.ILogic.pdb
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\Flying.Entity.dll
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\EntityFramework.dll
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\Flying.Entity.pdb
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\EntityFramework.xml
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\obj\Debug\Flying.ILogic.csprojResolveAssemblyReference.cache
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\obj\Debug\Flying.ILogic.dll
+D:\ZhuzfWeb\Flying.Web\Flying.ILogic\obj\Debug\Flying.ILogic.pdb

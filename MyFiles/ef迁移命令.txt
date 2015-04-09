@@ -1,0 +1,9 @@
+Enable-Migrations -ProjectName Flying.Entity -StartUpProjectName Flying.Web
+
+
+Add-Migration -Name myMirgration -ProjectName Flying.Entity -StartUpProjectName Flying.Web -Force
+
+Update-Database -VerBose -Script -ProjectName "Flying.Entity" -StartUpProjectName "Flying.Web"
+
+
+

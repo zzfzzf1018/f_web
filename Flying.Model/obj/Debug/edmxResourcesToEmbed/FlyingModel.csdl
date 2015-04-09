@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="FlyingModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="FlyingModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="fly_articleSet" EntityType="FlyingModel.fly_article" />
+  </EntityContainer>
+  <EntityType Name="fly_article">
+    <Key>
+      <PropertyRef Name="article_id" />
+    </Key>
+    <Property Name="article_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="article_title" Type="String" Nullable="false" />
+    <Property Name="article_content" Type="String" Nullable="false" />
+    <Property Name="create_time" Type="String" Nullable="false" />
+    <Property Name="last_update_time" Type="String" Nullable="false" />
+    <Property Name="user_id" Type="String" Nullable="false" />
+    <Property Name="user_name" Type="String" Nullable="false" />
+    <Property Name="article_type_id" Type="String" Nullable="false" />
+    <Property Name="article_label" Type="String" Nullable="false" />
+    <Property Name="article_little_title" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>

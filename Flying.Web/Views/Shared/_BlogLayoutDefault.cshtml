@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section header{
+    <link href="~/Content/theme/style.css" rel="stylesheet" />
+    @RenderSection("header", required: false)
+}
+@section scripts{
+    @RenderSection("scripts", required: false)
+}
+<div id="wrapper">
+    <div id="header" class="container">
+        <div id="logo">
+            <h1>@ViewBag.blogtitle</h1>
+            <p>@ViewBag.blogsubtitle</p>
+        </div>
+        <div id="menu">
+            <ul>
+                @Html.Partial("_LoginPartial")
+                <li class="current_page_item">
+                    @Html.ActionLink("主页", "Index", "Blog", null, new object { })
+                </li>
+                <li>
+                    @Html.ActionLink("目录", "Contents", "Blog", null, new object { })
+                </li>
+                <li>
+                    @Html.ActionLink("关于", "About", "Blog", null, new object { })
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end #header -->
+    <div id="page" class="container">
+        <div id="content">
+            <section>
+                @RenderBody()
+            </section>
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+        <!-- end #content -->
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <div id="search">
+                        <form method="get" action="#">
+                            <div>
+                                <input type="text" name="s" id="search-text" value="" />
+                                <input type="submit" id="search-submit" value="GO" />
+                            </div>
+                        </form>
+                    </div>
+                    <div style="clear: both;">&nbsp;</div>
+                </li>
+                <li>
+                    <h2>None</h2>
+                    <p>None</p>
+                </li>
+                <li>
+                    <h2>分 类</h2>
+                    <ul>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>None</h2>
+                    <ul>
+                        <li><a href="#">None</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Archives</h2>
+                    <ul>
+                        <li><a href="#">None</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+    <!-- end #page -->
+</div>
+<div id="footer-content" class="container">
+    <div id="footer-bg">
+        <div id="column1">
+            <h2> </h2>
+            <p></p>
+        </div>
+        <div id="column2">
+            <h2></h2>
+            <p></p>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>Copyright (c) @@ 2015 flying. All rights reserved. Design by zzf </p>
+</div>

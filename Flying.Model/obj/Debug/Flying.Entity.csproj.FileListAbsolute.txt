@@ -1,0 +1,14 @@
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\Flying.Entity.dll.config
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\Flying.Entity.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\Flying.Entity.pdb
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\EntityFramework.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\MySql.Data.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\EntityFramework.xml
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\obj\Debug\Flying.Entity.csprojResolveAssemblyReference.cache
+D:\ZhuzfWeb\Flying.Web\Flying.Model\obj\Debug\Flying.Entity.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Model\obj\Debug\Flying.Entity.pdb

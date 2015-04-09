@@ -1,0 +1,5 @@
+D:\ZhuzfWeb\Flying.Web\Flying.Test.Unit\bin\Debug\Flying.Test.Unit.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Test.Unit\bin\Debug\Flying.Test.Unit.pdb
+D:\ZhuzfWeb\Flying.Web\Flying.Test.Unit\obj\Debug\Flying.Test.Unit.dll
+D:\ZhuzfWeb\Flying.Web\Flying.Test.Unit\obj\Debug\Flying.Test.Unit.pdb
+D:\ZhuzfWeb\Flying.Web\Flying.Test.Unit\obj\Debug\Flying.Test.Unit.csprojResolveAssemblyReference.cache
